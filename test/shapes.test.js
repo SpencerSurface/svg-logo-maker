@@ -59,7 +59,7 @@ describe("Circle", () => {
     });
 
     describe("render()", () => {
-        // Test that returns the correct SVG string
+        // Test that render() returns the correct SVG string
         it("should return an SVG string", () => {
             const color = "chartreuse";
             const text = "JS";
@@ -67,6 +67,62 @@ describe("Circle", () => {
             const circle = new Circle(color, text, textColor);
             const expected = `<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg"><circle cx="150" cy="100" r="80" fill="${color}" /><text x="150" y="125" font-size="60" text-anchor="middle" fill="${textColor}">${text}</text></svg>`;
             expect(circle.render()).toEqual(expected);
+        });
+    });
+});
+
+describe("Square", () => {
+    describe("Square()", () => {
+        // Test that the Square class can be instantiated
+        it("should be an instance of Square", () => {
+            const square = new Square();
+            expect(square).toBeInstanceOf(Square);
+        });
+
+        // Test that the Square class is a subclass of the Shape class
+        it("should be an instance of Shape", () => {
+            const square = new Square();
+            expect(square).toBeInstanceOf(Shape);
+        });
+    });
+
+    describe("render()", () => {
+        // Test that render() returns the correct SVG string
+        it("should return an SVG string", () => {
+            const color = "chartreuse";
+            const text = "JS";
+            const textColor = "#000000";
+            const square = new Square(color, text, textColor);
+            const expected = `<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg"><square x="70" y="20" width="160" height="160" fill="${color}" /><text x="150" y="125" font-size="60" text-anchor="middle" fill="${textColor}">${text}</text></svg>`;
+            expect(square.render()).toEqual(expected);
+        });
+    });
+});
+
+describe("Triangle", () => {
+    describe("Triangle()", () => {
+        // Test that the Triangle class can be instantiated
+        it("should be an instance of Triangle", () => {
+            const triangle = new Triangle();
+            expect(triangle).toBeInstanceOf(Triangle);
+        });
+
+        // Test that the Triangle class is a subclass of the Shape class
+        it("should be an instance of Shape", () => {
+            const triangle = new Triangle();
+            expect(triangle).toBeInstanceOf(Shape);
+        });
+    });
+
+    describe("render()", () => {
+        // Test that render() returns the correct SVG string
+        it("should return an SVG string", () => {
+            const color = "chartreuse";
+            const text = "JS";
+            const textColor = "#000000";
+            const triangle = new Triangle(color, text, textColor);
+            const expected = `<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg"><polygon points="58,20 242,20 150,180" fill="${color}" /><text x="150" y="125" font-size="60" text-anchor="middle" fill="${textColor}">${text}</text></svg>`;
+            expect(triangle.render()).toEqual(expected);
         });
     });
 });
