@@ -1,28 +1,28 @@
-const Icon = require("../lib/icon.js");
+const Logo = require("../lib/logo.js");
 const {Circle} = require("../lib/shapes.js");
 const Text = require("../lib/text.js");
 
-describe("Icon", () => {
-    describe("Icon()", () => {
-        // Test that the Icon class can be instantiated
-        it("should be an instance of Icon", () => {
-            const icon = new Icon();
-            expect(icon).toBeInstanceOf(Icon);
+describe("Logo", () => {
+    describe("Logo()", () => {
+        // Test that the Logo class can be instantiated
+        it("should be an instance of Logo", () => {
+            const logo = new Logo();
+            expect(logo).toBeInstanceOf(Logo);
         });
 
         // Test that shape can be assigned
         it("should store its shape property", () => {
             const shape = new Circle();
-            const icon = new Icon(shape);
-            expect(icon.shape).toEqual(shape);
+            const logo = new Logo(shape);
+            expect(logo.shape).toEqual(shape);
         });
 
         // Test that text can be assigned
         it("should store its text property", () => {
             const shape = new Circle();
             const text = new Text();
-            const icon = new Icon(shape, text);
-            expect(icon.text).toEqual(text);
+            const logo = new Logo(shape, text);
+            expect(logo.text).toEqual(text);
         });
     });
 
@@ -31,9 +31,9 @@ describe("Icon", () => {
         it("should return the correct SVG string", () => {
             const shape = new Circle();
             const text = new Text();
-            const icon = new Icon(shape, text);
+            const logo = new Logo(shape, text);
             const expected = `<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg">${shape.render() + text.render()}</svg>`;
-            expect(icon.render()).toEqual(expected);
+            expect(logo.render()).toEqual(expected);
         })
     })
 });
