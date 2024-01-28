@@ -72,7 +72,7 @@ describe("Square", () => {
         it("should return correct SVG string", () => {
             const color = "chartreuse";
             const square = new Square(color);
-            const expected = `<square x="70" y="20" width="160" height="160" fill="${color}" />`;
+            const expected = `<rect x="70" y="20" width="160" height="160" fill="${color}" />`;
             expect(square.render()).toEqual(expected);
         });
     });
