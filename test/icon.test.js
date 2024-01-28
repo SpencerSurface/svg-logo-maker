@@ -27,6 +27,7 @@ describe("Icon", () => {
     });
 
     describe("render()", () => {
+        // Test that render() returns the correct SVG string
         it("should return the correct SVG string", () => {
             const shape = new Circle();
             const text = new Text();
