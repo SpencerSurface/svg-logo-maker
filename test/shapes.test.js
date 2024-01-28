@@ -24,7 +24,7 @@ describe("Shape", () => {
         });
 
         // Test that textColor can be assigned
-        it("should store its text property", () => {
+        it("should store its textColor property", () => {
             const color = "chartreuse";
             const text = "JS";
             const textColor = "#000000"
@@ -60,7 +60,7 @@ describe("Circle", () => {
 
     describe("render()", () => {
         // Test that render() returns the correct SVG string
-        it("should return an SVG string", () => {
+        it("should return correct SVG string", () => {
             const color = "chartreuse";
             const text = "JS";
             const textColor = "#000000";
@@ -88,7 +88,7 @@ describe("Square", () => {
 
     describe("render()", () => {
         // Test that render() returns the correct SVG string
-        it("should return an SVG string", () => {
+        it("should return correct SVG string", () => {
             const color = "chartreuse";
             const text = "JS";
             const textColor = "#000000";
@@ -116,7 +116,7 @@ describe("Triangle", () => {
 
     describe("render()", () => {
         // Test that render() returns the correct SVG string
-        it("should return an SVG string", () => {
+        it("should return correct SVG string", () => {
             const color = "chartreuse";
             const text = "JS";
             const textColor = "#000000";
