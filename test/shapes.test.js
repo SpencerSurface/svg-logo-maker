@@ -16,6 +16,25 @@ describe("Shape", () => {
         });
     });
 
+    describe("getColor()", () => {
+        // Test that getColor() returns the correct color
+        it("should return the correct value for color", () => {
+            const color = "purple"
+            const shape = new Shape(color);
+            expect(shape.getColor()).toEqual(color);
+        })
+    })
+
+    describe("setColor()", () => {
+        // Test that setColor() stores the color correctly
+        it("should store the color correctly", () => {
+            const shape = new Shape();
+            const color = "purple"
+            shape.setColor(color)
+            expect(shape.getColor()).toEqual(color);
+        })
+    })
+
     describe("render()", () => {
         // Test that render() throws an error when called directly
         it("should throw an error when called", () => {
