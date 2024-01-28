@@ -20,6 +20,10 @@ A sample of a SVG file generated with this tool is included as `example.svg` in 
 
 A walkthrough of the functionality of the tool is provided in the following video: [Walkthrough video](./walkthrough.webm)
 
+## Tests
+
+The tests included for this project cover the following classes: Icon, Shape and its subclasses, and Text. They are included in the `test` directory. To run them, run the comment `npm run test` in the terminal.
+
 ## Credits
 
 All code was written on my own. The file structure was suggested by, and the functionality of the shape classes was essentially required by, instructions provided by edX Boot Camps LLC. The contents of `index.js`, `cli.js`, and `createDocument.js` were modelled off examples given by edX for a different project (the List Generator Miniproject).
@@ -27,7 +31,3 @@ All code was written on my own. The file structure was suggested by, and the fun
 ## License
 
 This project is licensed under the GNU General Public License version 3. See [LICENSE](./LICENSE) for the full text of the license.
-
-## Tests
-
-The tests included for this project cover the following classes: Icon, Shape and its subclasses, and Text. They are included in the `test` directory. To run them, run the comment `npm run test` in the terminal.
